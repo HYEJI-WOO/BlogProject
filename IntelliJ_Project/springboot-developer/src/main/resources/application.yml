@@ -1,0 +1,33 @@
+server:
+  port: 3000
+
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+
+  h2:
+    console:
+      enabled: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 877457265420-5bjnslt0ipelkl6d1b0hcsdt7kr5l2rp.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+
+jwt:
+  issuer: ajufresh@gmail.com
+  secret_key: study-springboot
