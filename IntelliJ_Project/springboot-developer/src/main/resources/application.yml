@@ -22,7 +22,7 @@ spring:
       client:
         registration:
           google:
-
+            
             scope:
               - email
               - profile
